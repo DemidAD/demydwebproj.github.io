@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Žiadosť</title>
+  <link rel="stylesheet" href="css/contact.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Žiadosť</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="main.html">Hlavná stránka</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="information_page.html">Informácie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Žiadosť</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tasks.html">Úlohy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="form">
+  <section class="form-section">
+    <h1 class="text-center">Kontaktný formulár</h1>
+
+    <!-- Správa o úspešnom odoslaní -->
+    <div id="success-message" class="alert alert-success d-none text-center" role="alert">
+      Vaše údaje boli úspešne odoslané!
+    </div>
+
+    <form id="contactForm" class="contact-form">
+      <div class="row">
+        <div class="input-box col-md-6">
+          <label for="first_name" class="form-label">Meno</label>
+          <input type="text" id="first_name" name="first_name" class="form-control" placeholder="Vaše meno" required>
+        </div>
+        <div class="input-box col-md-6">
+          <label for="last_name" class="form-label">Priezvisko</label>
+          <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Vaše priezvisko" required>
+        </div>
+      </div>
+
+      <div class="input-box">
+        <label for="country" class="form-label">Krajina</label>
+        <input type="text" id="country" name="country" class="form-control" placeholder="Vaša krajina" required>
+      </div>
+
+      <div class="input-box">
+        <label for="phone" class="form-label">Telefón</label>
+        <input type="tel" id="phone" name="phone" class="form-control" placeholder="Váš telefón" required>
+      </div>
+
+      <div class="input-box">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="Váš email" required>
+      </div>
+
+      <div class="input-box">
+        <label for="contact_time" class="form-label">Kedy sa s vami môžeme spojiť?</label>
+        <input type="text" id="contact_time" name="contact_time" class="form-control" placeholder="Uveďte čas" required>
+      </div>
+
+      <div class="input-box">
+        <label for="interest" class="form-label">Čo vás zaujalo?</label>
+        <textarea id="interest" name="interest" class="form-control" placeholder="Opíšte, čo vás zaujalo alebo upútalo" required></textarea>
+      </div>
+
+      <div class="input-box">
+        <label for="comment" class="form-label">Komentár</label>
+        <textarea id="comment" name="comment" class="form-control" placeholder="Komentár"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Odoslať</button>
+    </form>
+  </section>
+</main>
+
+<footer class="bg-dark text-light py-3">
+  <div class="container text-center">
+    <p>Vyvinul: Saienko Demyd, Tuke, Január 19 2025</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Zastavíme štandardné odoslanie formulára
+
+    // Zobrazíme správu o úspešnom odoslaní
+    document.getElementById('success-message').classList.remove('d-none');
+
+    // Vyčistíme formulár po odoslaní
+    document.getElementById('contactForm').reset();
+  });
+</script>
+
+</html>
