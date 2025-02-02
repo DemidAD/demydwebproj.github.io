@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+header {
+  background-color: #cffce0;
+  color: white;
+  padding: 1rem 0;
+}
+
+header .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+header .nav-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+header .nav-link:hover {
+  color: #ffc107;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.form {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-section {
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Ввод данных */
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.input-box input,
+.input-box textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.input-box input:focus
+.input-box textarea:focus
+{
+  outline: none;
+  border-color: #007bff;
+  background-color: #ffffff;
+}
+
+/* Кнопка отправки */
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+
+
+

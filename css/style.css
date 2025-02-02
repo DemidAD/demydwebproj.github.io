@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+header {
+  background-color: #cffce0;
+  color: white;
+  padding: 1rem 0;
+}
+
+header .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+header .nav-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+header .nav-link:hover {
+  color: #ffc107;
+}
+
+.featured-wonders {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.featured-wonders img {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+
+.card-img-top {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+.info-heading {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+
+
+
+
+
+
